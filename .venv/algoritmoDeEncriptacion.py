@@ -11,11 +11,11 @@ keyHex = "0001020304050607"
 crypt.SetEncodedKey(keyHex,"hex")
 class claseEncriptado:
     
-    def metodoEncriptacion (password):
+    def metodoEncriptacion (self,password):
         encStr = crypt.EncryptStringENC(password)
         return encStr
 
-    def metodoDesencriptacion (password):
+    def metodoDesencriptacion (self,password):
         decStr = crypt.DecryptStringENC(password)
         return decStr
 
